@@ -6,7 +6,7 @@ module.exports = {
     entry: './src/client/app/index.js',
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'docs'),
         clean: true,
         publicPath: '/', // Required for dev server
     },
@@ -26,14 +26,5 @@ module.exports = {
     ],
     resolve: {
         extensions: ['.js']
-    },
-    devServer: {
-        static: {
-            directory: path.resolve(__dirname, 'dist'),
-        },
-        port: 4000,
-        open: true,
-        hot: true,
-        historyApiFallback: true,
     },
 };
