@@ -18,7 +18,7 @@ connectDB();
 // Middleware
 app.use(cors()); // allow all origins by default
 app.use(express.json());
-app.use(express.static(path.resolve(__dirname, '../../dist')));
+app.use(express.static(path.resolve(__dirname, '../../docs')));
 app.use(express.urlencoded({ extended: true }));
 app.use('/public', express.static(path.join(__dirname, 'public')));
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
