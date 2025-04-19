@@ -5,10 +5,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: './src/client/app/index.js',
     output: {
-        filename: 'bundle.js',
+        filename: 'bundle.[contenthash].js',
         path: path.resolve(__dirname, 'docs'),
-        clean: true,
-        publicPath: './', // Required for dev server
+        //clean: true,
+        publicPath: '/kyle-hosein.github.io/', // Required for dev server
     },
     module: {
         rules: [
